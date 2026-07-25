@@ -9,7 +9,7 @@ Keyword search reads the text layer of each PDF, so scanned/image-only datasheet
 
 This is the Windows version of the Mac "Trafag Datasheet Finder."
 
-## How updates work
+## How (datasheet) updates work
 
 Trafag revisions are the one or two letters right after the H number: `H72304ac` is newer than `H72304ab` (letters run `a, b … z, aa, ab …`, so a longer suffix is always newer). When the tool finds a newer revision online it downloads it and moves the superseded file to the **Recycle Bin** (recoverable, not permanently deleted).
 
@@ -17,22 +17,7 @@ The check runs **automatically once a week**, on the first **Monday-morning logo
 
 ---
 
-## For whoever sets it up (one time)
-
-You build the `.exe` once on any Windows PC, then copy that single file to each coworker.
-
-1. Install Python 3.8+ from https://www.python.org/downloads/ — during install, tick **"Add Python to PATH."**
-2. Put `trafag_tool.py` and `build.bat` in the same folder.
-3. Double-click **`build.bat`**. It installs PyInstaller and produces **`dist\TrafagDatasheets.exe`**.
-4. Copy **`TrafagDatasheets.exe`** to each coworker's PC (Desktop is fine).
-
-> Why a build step? A Windows `.exe` can only be produced on Windows, so it can't be generated on the Mac this was ported from. The build is one double-click.
-
-> Antivirus note: unsigned PyInstaller `.exe` files are occasionally flagged by corporate antivirus. If that happens, allow-list the file, or have IT sign it.
-
----
-
-## For coworkers (using it)
+## For Users
 
 1. Double-click **`TrafagDatasheets.exe`**.
 2. A **`Datasheets`** folder is created automatically next to the `.exe` (this is where PDFs are stored). To use a different folder, click **Change…** at the top — it's remembered.

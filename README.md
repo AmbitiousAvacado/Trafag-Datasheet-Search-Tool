@@ -20,9 +20,9 @@ The check runs **automatically once a week**, on the first **Monday-morning logo
 ## For Users
 
 1. Double-click **`TrafagDatasheets.exe`**.
-2. A **`Datasheets`** folder is created automatically next to the `.exe` (this is where PDFs are stored). To use a different folder, click **Change…** at the top — it's remembered.
+2. A **`Datasheets`** folder is created automatically next to the `.exe` (this is where PDFs are stored). To use a different folder, click **Change…** at the top. The program will make an internal record of this new location and the change will be persist moving foward even after the program is closed.
 
-**To open a datasheet you already have:** go to **Find & open**, type any part of the name/number, double-click a result (or click *Open on this monitor*). It opens on whichever monitor your mouse is on.
+**To open a datasheet you already have:** go to **Find & open**, type any part of the name/number, double-click a result (or click *Open on this monitor*). The program does a quick search to find your cursor, note which monitor it is present on, and moves the PDF to that monitor.
 
 **To download a new datasheet:** go to **Download**, type the document code (the **H** number, e.g. `H72303`), choose a language, click **Download datasheet**. It saves into the Datasheets folder and offers to open it.
 
